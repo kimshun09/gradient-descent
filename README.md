@@ -125,13 +125,18 @@ Optimized solution x =
 
 以下の最適化問題を最急降下法とアルミホの条件による直線探索で解く例．
 
-```html
-<img src=
-"https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign%2A%7D%0AR%28g%29+%26%3D+%5Cfrac%7B1%7D%7Bn%7D+%5Csum_%7Bi%3D1%7D%5E%7Bn%7D+%5Cell%28y_i%2Cg%28x_i%29%29%5C%5C%0A%26%3D%5Cfrac%7B1%7D%7B2n%7D+%28%5Cmathbf%7BX%7D%5Cboldsymbol%7Bw%7D-%5Cmathbf%7By%7D%29%5ET+%28%5Cmathbf%7BX%7D%5Cboldsymbol%7Bw%7D-%5Cmathbf%7By%7D%29%0A%5Cend%7Balign%2A%7D%0A" 
-alt="\begin{align*}
-R(g) &= \frac{1}{n} \sum_{i=1}^{n} \ell(y_i,g(x_i))\\
-&=\frac{1}{2n} (\mathbf{X}\boldsymbol{w}-\mathbf{y})^T (\mathbf{X}\boldsymbol{w}-\mathbf{y})
-\end{align*}
-">
 ```
+![\begin{align*}
+ & f(x_1, x_2) = \\
+ & \sum_{i = 1}^2 x_i^2 
+ -\exp \left( - 10 \sum_{i = 1}^2 (x_i - u_{1,i})^2 \right)
+ -\exp \left( - 5 \sum_{i = 1}^2 (x_i - u_{2,i})^2 \right)
+ -\exp \left( - 10 \sum_{i = 1}^2 (x_i - u_{3,i})^2 \right)
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A+%26+f%28x_1%2C+x_2%29+%3D+%5C%5C%0A+%26+%5Csum_%7Bi+%3D+1%7D%5E2+x_i%5E2+%0A+-%5Cexp+%5Cleft%28+-+10+%5Csum_%7Bi+%3D+1%7D%5E2+%28x_i+-+u_%7B1%2Ci%7D%29%5E2+%5Cright%29%0A+-%5Cexp+%5Cleft%28+-+5+%5Csum_%7Bi+%3D+1%7D%5E2+%28x_i+-+u_%7B2%2Ci%7D%29%5E2+%5Cright%29%0A+-%5Cexp+%5Cleft%28+-+10+%5Csum_%7Bi+%3D+1%7D%5E2+%28x_i+-+u_%7B3%2Ci%7D%29%5E2+%5Cright%29%0A%5Cend%7Balign%2A%7D%0A)
+```
+
+目的関数の等高線図は以下のようになる．
+
+![graph](graph/contour.pdf)
 
